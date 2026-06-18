@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+body {
+  @apply bg-slate-100 text-slate-900 antialiased;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.card {
+  @apply rounded-2xl border border-slate-200/80 bg-white p-6 shadow-sm shadow-slate-200/50;
+}
+
+.chart-card {
+  @apply rounded-2xl border border-slate-200/80 bg-white p-5 shadow-md shadow-slate-200/60 transition hover:shadow-lg;
+}
+
+.btn-primary {
+  @apply inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-indigo-600 to-indigo-500 px-5 py-2.5 text-sm font-semibold text-white shadow-md shadow-indigo-500/30 transition hover:from-indigo-500 hover:to-indigo-400 hover:shadow-lg disabled:cursor-not-allowed disabled:opacity-50;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-2.5 text-sm font-medium text-slate-700 shadow-sm transition hover:border-slate-300 hover:bg-slate-50;
+}
+
+.input {
+  @apply w-full rounded-xl border border-slate-200 bg-slate-50/50 px-3.5 py-2.5 text-sm transition focus:border-indigo-400 focus:bg-white focus:outline-none focus:ring-2 focus:ring-indigo-100;
+}
+
+.badge-valid {
+  @apply rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-semibold text-emerald-700 ring-1 ring-emerald-200/60;
+}
+
+.badge-warning {
+  @apply rounded-full bg-amber-100 px-2.5 py-0.5 text-xs font-semibold text-amber-800 ring-1 ring-amber-200/60;
+}
+
+.badge-rejected {
+  @apply rounded-full bg-rose-100 px-2.5 py-0.5 text-xs font-semibold text-rose-700 ring-1 ring-rose-200/60;
+}
+
+.filter-panel {
+  @apply rounded-2xl border border-slate-200/80 bg-gradient-to-br from-white to-slate-50/80 p-6 shadow-sm;
+}
+
+.dropzone {
+  @apply rounded-2xl border-2 border-dashed border-indigo-200 bg-gradient-to-br from-indigo-50/50 to-cyan-50/30 p-12 transition;
+}
+
+.dropzone-active {
+  @apply border-indigo-400 bg-indigo-50/80 shadow-inner;
+}
+
+.stat-chip {
+  @apply rounded-xl bg-slate-50 px-4 py-3 ring-1 ring-slate-100;
+}
+
+.progress-bar {
+  @apply h-2.5 overflow-hidden rounded-full bg-indigo-100;
+}
+
+.progress-fill {
+  @apply h-full rounded-full bg-gradient-to-r from-indigo-500 to-cyan-500 transition-all duration-500;
+}
